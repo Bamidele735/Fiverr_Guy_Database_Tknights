@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/future/image" 
+import helpDappUtil from "../../ulits/help"
 
 import styles from "../../styles/mainpages/index.module.css"
 
@@ -25,8 +26,6 @@ const Firstsc = () => {
     }, 4);
   }, []);
 
-
-  // Memberaccess
 
   // Connect Wallet Function
 
@@ -143,11 +142,21 @@ useEffect(() => {
   return (
     <div className={styles.firstsc}>
       <div className={styles.firstsc_buttondiv}>
-        <Link href={"/mint"}>
+        {/* <Link href={"/mint"}>
           <button
           className={styles.mintbutton}
           >MINT NOW</button>
-        </Link>
+        </Link> */}
+        {/* <button 
+          className={styles.mintbutton} type="button" onClick={() => router.push('/mint')}>
+      Mint now */}
+    {/* </button> */}
+    <Link href="/mint"  passHref >
+  <a target="_blank" onClick={helpDappUtil} rel="noopener noreferrer" className={styles.mintbutton}>
+    MINT NOW
+  </a>
+</Link>
+  <button onClick={helpDappUtil}>hjk</button>
         
           <button
           onClick={() => {
