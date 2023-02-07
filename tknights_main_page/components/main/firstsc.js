@@ -1,6 +1,5 @@
 import Link from "next/link"
 import Image from "next/future/image" 
-import helpDappUtil from "../../ulits/help"
 
 import styles from "../../styles/mainpages/index.module.css"
 
@@ -152,11 +151,10 @@ useEffect(() => {
       Mint now */}
     {/* </button> */}
     <Link href="/mint"  passHref >
-  <a target="_blank" onClick={helpDappUtil} rel="noopener noreferrer" className={styles.mintbutton}>
+  <a target="_blank" rel="noopener noreferrer" className={styles.mintbutton}>
     MINT NOW
   </a>
 </Link>
-  <button onClick={helpDappUtil}>hjk</button>
         
           <button
           onClick={() => {
