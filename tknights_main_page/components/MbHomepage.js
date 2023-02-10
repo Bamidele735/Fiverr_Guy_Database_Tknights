@@ -4,10 +4,6 @@ import styles from "../styles/memberaccess/memberaccess.module.css"
 //Next Imports
 import Image from "next/future/image";
 import Link from "next/link";
-
-import { useRouter } from 'next/router'
-
-const router = useRouter()
   
 
 // File Imports
@@ -92,15 +88,14 @@ const MbHomepage = () => {
                               />
 
                               <div className={styles.nav}>
-                              {/* <button type="button" >Click me</button> */}
-                                          <Link href='/' onClick="window.location.reload()" >
+                                          <Link href="/">
                                                 <Image 
                                                 src={logo}
                                                 className={styles.navlogo}
                                                 alt="Tknights Logo"
                                                 />
                                           </Link>                 
-                                          <Link onClick={() => router.reload('/')} >
+                                          <Link href="/" >
                                                 <button>
                                                       Home
                                                 </button> 

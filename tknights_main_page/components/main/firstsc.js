@@ -136,6 +136,9 @@ useEffect(() => {
     }, 900000);
   }
 }, [responseGlobal]);
+const forceReload = () => {
+  router.reload();
+}
 
 
   return (
@@ -151,10 +154,17 @@ useEffect(() => {
       Mint now */}
     {/* </button> */}
     <Link href="/mint"  passHref >
-  <a target="_blank" rel="noopener noreferrer" className={styles.mintbutton}>
+  <a onClick={forceReload} rel="noopener noreferrer" className={styles.mintbutton}>
     MINT NOW
   </a>
 </Link>
+    {/* <Link href="/mint"  passHref > */}
+  {/* <a target="_blank" rel="noopener noreferrer" className={styles.mintbutton}>
+    MINT NOW
+  </a> */}
+  {/* <button onClick={forceReload}>MINT NOW</button> */}
+  
+{/* </Link> */}
         
           <button
           onClick={() => {
