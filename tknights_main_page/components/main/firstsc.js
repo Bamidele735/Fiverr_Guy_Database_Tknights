@@ -153,8 +153,8 @@ const forceReload = () => {
           className={styles.mintbutton} type="button" onClick={() => router.push('/mint')}>
       Mint now */}
     {/* </button> */}
-    <Link href="/mint"  passHref >
-  <a onClick={forceReload} rel="noopener noreferrer" className={styles.mintbutton}>
+    <Link  href="/mint"  >
+  <a   target="_parent"  passHref rel="noopener noreferrer" className={styles.mintbutton}>
     MINT NOW
   </a>
 </Link>

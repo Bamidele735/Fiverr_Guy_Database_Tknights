@@ -16,9 +16,9 @@ const Firstscsc = () => {
             router.reload();
       }
       return(
-            <div className={styles.firstsc}>
-                        <Link href="/">
-                        <a onClick={forceReload} rel="noopener noreferrer" className={styles.mintbutton}>
+            <div className={styles.firstsc} >
+                        <Link href="/" rel="noopener noreferrer" className={styles.mintbutton}>
+                        <a target="_parent"  >
     
                               <Image 
                               alt="Tknights Logo"

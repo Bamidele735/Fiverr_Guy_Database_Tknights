@@ -1,6 +1,5 @@
 import Head from 'next/head'
 
-import MbHomepage from '../components/MbHomepage'
 import Footer from '../components/Footer'
 
 import { useEffect, useState } from 'react';
