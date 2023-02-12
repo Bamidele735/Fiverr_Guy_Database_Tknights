@@ -33,7 +33,7 @@ export default function Memberaccess() {
         </Head>
 
           <div>
-              <p>Authenticating...</p>
+              <p>Authenticating....</p>
           </div>
         <Footer />
 
